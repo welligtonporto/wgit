@@ -1,0 +1,30 @@
+<h2 class="title-default">My repositories</h2>
+
+<ul class="row">
+	<li class="col s12 m6"
+		*ngFor="let repository of repositories">
+
+		<div class="card">
+			<div class="card-content white-text">
+            	<a class="card-title" [href]="repository.url">{{ repository.name }}</a>
+				<p class="grey-text text-darken-3">{{ repository.language }}</p>
+            </div>
+            
+            <div class="card-action">
+            	<small class="grey-text text-darken-1">{{ myUser }}</small>
+
+            	<div class="right">
+					<div class="card-action-item grey-text text-darken-3 valign-wrapper left">
+						<i class="material-icons tiny">star</i>
+						{{ repository.stars }}
+					</div>
+
+					<div class="card-action-item grey-text text-darken-3 valign-wrapper">
+						<i class="material-icons tiny">content_copy</i>
+						{{ repository.forks }}
+					</div>
+				</div>
+            </div>
+		</div>
+	</li>
+</ul>

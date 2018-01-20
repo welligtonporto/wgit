@@ -1,0 +1,32 @@
+<div class="navbar-fixed">
+	<nav>
+		<div class="container">
+			<div class="nav-wrapper">
+				<span class="brand-logo left">{{ title }}</span>
+
+				<ul id="nav-mobile" class="right">
+					<li routerLinkActive="active">
+						<a routerLink="/my-repositories" title="My repositories">
+							<i class="material-icons hide-on-med-and-up">person</i>
+							<span class="hide-on-small-only">My repositories</span>
+						</a>
+					</li>
+
+					<li routerLinkActive="active">
+						<a routerLink="/search-repositories" title="Search repositories">
+							<i class="material-icons hide-on-med-and-up">search</i>
+							<span class="hide-on-small-only">Search repositories</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- .nav-wrapper -->
+		</div>
+		<!-- .container -->
+	</nav>
+</div>
+<!-- .navbar-fixed -->
+
+<div class="container">
+	<router-outlet></router-outlet>
+</div>

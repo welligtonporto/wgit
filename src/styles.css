@@ -1,0 +1,29 @@
+body {
+	background-color: #f5f5f5;
+	padding-bottom: 80px;
+}
+
+.title-default {
+	color: #ee6e73;
+}
+
+.card-action-item {
+	margin-right: 20px;
+}
+
+.card-action-item:last-child {
+	margin-right: 0;
+}
+
+.card-action-item i {
+	float: left;
+	margin-right: 5px;
+}
+
+.input-search {
+	color: #ee6e73;
+}
+
+.col.m6:nth-child(2n+1) {
+	clear: both;
+}
